@@ -123,21 +123,11 @@ body{
 
 /*header E*/
 #banner{
-    background: url(images/main_banner.jpg);
     height: 650px;
-    background-repeat: no-repeat;
-    background-position: top;
     width: 100%;
 }
-#banner p{
-    padding-top: 200px;
-    color:rgb(16, 31, 24);
-    font-family: "gmarket-sans";
-    font-size: 24px;
-    line-height: 34px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-align: center;
+#banner video{
+    width: 100%;
 }
 #intro{
     position: relative;
