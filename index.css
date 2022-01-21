@@ -15,6 +15,7 @@ ul{
  font-family: 'Nanum Gothic', sans-serif;
 }
 body{
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: rgb(16, 31, 24);
@@ -186,7 +187,7 @@ body{
     float: left;
     margin: 0 10px;
 }
-/*메뉴 가격 hover*/
+/*메뉴 가격 hover
 .screen{position:relative;}
 .name{position:absolute;
 text-align: center;
@@ -203,14 +204,47 @@ ul li:hover .name{top:30px;}
     color: rgb(14, 110, 65);
     font-weight: bold;
     font-size: 16px;
-}
+}*/
+
+/*메뉴 후버시 테두리*/
+.menu_hover{position:relative;
+display:inline-block;}
+.menu_hover img{max-width:100%; 
+display:block;}
+.menu_hover span.name{position:absolute;
+	top:89%;
+	left:0;
+	transform:translateY(-50%);
+	display:none;
+	width:100%;
+	font-size:18px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;}
+.menu_hover::before, .menu_hover::after{
+	content:' ';
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:95%;
+	height:95%;
+	transform:translate(-50%,-50%);
+	transition:all 0.8s;}
+.menu_hover::before{border-top:2px solid #fff;border-bottom:2px solid #fff;
+width:0;}
+.menu_hover::after{border-left:2px solid #fff;border-right:2px solid #fff;
+height:0;}
+
+.menu_hover:hover span.name{display:block;}
+.menu_hover:hover::before{width:95%;}
+.menu_hover:hover::after{height:95%;}
 
 /*메뉴 확대 hover*/
-#menu ul li{
+#menu ul li .menu_hover{
     overflow: hidden;
 }
-#menu ul li:hover img{
-    transform: scale(1.2, 1.2);
+#menu ul li:hover .menu_hover img{
+    transform: scale(1.1, 1.1);
 }
 #menu>ul>li>div>img{
     transition: all 0.5s;
