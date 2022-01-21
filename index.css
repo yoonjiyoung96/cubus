@@ -229,7 +229,9 @@ display:block;}
 	width:95%;
 	height:95%;
 	transform:translate(-50%,-50%);
-	transition:all 0.8s;}
+	transition:all 0.8s;
+    z-index: 10;
+}
 .menu_hover::before{border-top:2px solid #fff;border-bottom:2px solid #fff;
 width:0;}
 .menu_hover::after{border-left:2px solid #fff;border-right:2px solid #fff;
