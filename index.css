@@ -478,6 +478,9 @@ margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 10px;
 }
+.view2{
+    padding-top: 145px;
+}
 /*footer */
 #footer{
     background: url(images/footer.jpg) no-repeat center;
@@ -527,9 +530,7 @@ margin: 0 auto;
     float: left;
     padding: 10px 15px;
 }
-.view2{
-    float: right;
-}
+
 .left ul li{
     overflow: hidden;
 }
@@ -570,7 +571,4 @@ margin: 0 auto;
 				color:#fff;
 				margin-bottom:5px;
 				border-radius:50%;}
-
-
-
 
